@@ -1,3 +1,3 @@
 # Hybrid-Cloud-Lab☁️
 # 📖 Project Overview
-Dự án này trình bày cách hệ thống On-Primese kết nối với Azure để trở thành hệ thống Hybrid hoàn chỉnh. Mục tiêu chính là chạy được các dịch vụ của Cloud Azure, khắc phục các vấn đề thường thấy ở các mô hình hệ thống Colocation, On-primese, và Full Cloud.
+This project demonstrates the design and implementation of a hybrid security architecture that combines on-premises infrastructure with cloud-based management. The core objective is to establish a robust security monitoring system, while leveraging Active Directory and Azure Arc for unified identity and management. This setup serves as a sandbox environment to study network traffic flow, threat detection, and hybrid infrastructure synchronization—providing a framework to streamline operations and improve manageability in complex server environments
