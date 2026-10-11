@@ -21,15 +21,7 @@ This lab focuses on building a hybrid cloud system in a real-world scenario, gua
 * CLient VM 01 (HQ User) & Client VM 02(Branch User): Simulated end-user workstation
 * Mikrotik router: IPsec tunnel, IP gateway setup, DHCP relay agent, firewall, internet setup
 #
-#🗺️ Architecture Diagram
-
-#
-#☁️ Azure Cloud 
-* Azure AD Connect Cloud Sync: sync user from on-premises Active directory into Microsoft Entra ID (Azure AD)
-* 25 users successfully synced to Azure Entra ID
-<img width="1362" height="767" alt="image" src="https://github.com/user-attachments/assets/038dab6f-a2a3-420d-9e4a-f714aa3be94e" />
-* On-Premises Active Directory OU Structure
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/96df789c-1c84-4cbd-8244-914e7f811887" />
+# 🗺️ Architecture Diagram
 
 #
 #🔨 Technologies Used 
@@ -37,3 +29,12 @@ This lab focuses on building a hybrid cloud system in a real-world scenario, gua
 * Router Mikrotik OS
 * Git
 * Git Hub
+#
+#☁️ Azure Cloud 
+* Azure AD Connect Cloud Sync: sync user from on-premises Active directory into Microsoft Entra ID (Azure AD)
+* 25 users successfully synced to Azure Entra ID
+<img width="1362" height="767" alt="image" src="https://github.com/user-attachments/assets/038dab6f-a2a3-420d-9e4a-f714aa3be94e" />
+* On-Premises Active Directory OU Structure
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/96df789c-1c84-4cbd-8244-914e7f811887" />
+#
+
