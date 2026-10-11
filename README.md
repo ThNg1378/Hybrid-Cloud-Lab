@@ -1,8 +1,8 @@
 # Hybrid-Cloud-Lab☁️
 # 📖 Project Overview
-This project demonstrates the design and implementation of a hybrid security architecture that combines on-premises infrastructure with cloud-based management. The core objective is to establish a robust security monitoring system, while leveraging Active Directory and Azure Arc for unified identity and management. This setup serves as a sandbox environment to study network traffic flow, threat detection, and hybrid infrastructure synchronization—providing a framework to streamline operations and improve manageability in complex server environments
+This project demonstrates the design and implementation of a hybrid cloud infrastructure that combines on-premises infrastructure with Microsoft Azure cloud services. The core objective is to establish a robust security monitoring system, while leveraging Active Directory and Azure Cloud (Cloud Sync) for unified identity and management. This setup serves as a sandbox environment to study network traffic flow, user synchronization, and hybrid infrastructure replication—providing a framework to streamline operations and improve manageability in complex server environments.
 
-This lab focuses on building and penetration testing a hybrid cloud system in a real-world scenario, guaranteeing high availability, disaster recovery, and centralized monitoring.
+This lab focuses on building a hybrid cloud system in a real-world scenario, guaranteeing high availability, disaster recovery, and centralized monitoring.
 # 
 ## 🎯 Project Goals
 * Enterprise-Grade Architecture: Designed and built a highly available hybrid cloud infrastructure.
