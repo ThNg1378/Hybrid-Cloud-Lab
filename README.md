@@ -4,3 +4,5 @@ This project demonstrates the design and implementation of a hybrid security arc
 
 This lab focuses on building and penetration testing a hybrid cloud system in a real-world scenario, guaranteeing high availability, disaster recovery, and centralized monitoring.
 # 
+# Project Goals
+--
