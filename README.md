@@ -26,9 +26,9 @@ This lab focuses on building and penetration testing a hybrid cloud system in a 
 #
 #☁️ Azure Cloud 
 * Azure AD Connect Cloud Sync: sync user from on-premises Active directory into Microsoft Entra ID (Azure AD)
-* Sync from On-premises 
+* 25 users successfully synced to Azure Entra ID
 <img width="1362" height="767" alt="image" src="https://github.com/user-attachments/assets/038dab6f-a2a3-420d-9e4a-f714aa3be94e" />
-* Ou Management on on premises
+* On-Premises Active Directory OU Structure
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/96df789c-1c84-4cbd-8244-914e7f811887" />
 
 #
