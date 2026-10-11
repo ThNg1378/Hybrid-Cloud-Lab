@@ -4,7 +4,7 @@ This project demonstrates the design and implementation of a hybrid security arc
 
 This lab focuses on building and penetration testing a hybrid cloud system in a real-world scenario, guaranteeing high availability, disaster recovery, and centralized monitoring.
 # 
-#🎯 Project Goals
+## 🎯 Project Goals
 * Enterprise-Grade Architecture: Designed and built a highly available hybrid cloud infrastructure.
 * Multi-Site Directory Services: Deployed Active Directory and Read-Only Domain Controllers (RODC) across distributed sites.
 * Secure Connectivity: Configured IPsec VPNs to ensure secure site-to-site communication.
@@ -33,7 +33,7 @@ This lab focuses on building and penetration testing a hybrid cloud system in a 
 
 #
 #🔨 Technologies Used 
-* Azure Cloud tenent
-* Router Mikcrotik OS
+* Azure Cloud tenant
+* Router Mikrotik OS
 * Git
 * Git Hub
