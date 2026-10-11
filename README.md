@@ -17,8 +17,17 @@ This lab focuses on building and penetration testing a hybrid cloud system in a 
 * Hypervisor: VMware workstation
 * Domain Server: Active Directory, OU Mangement, DNS Server, DHCP Server
 * Monitor Server: PRTG, Snort IDS
+* File Server: Backup data, Save file, Sharing file
 * CLient VM 01 (HQ User) & Client VM 02(Branch User): Simulated end-user workstation
 * Mikcrotik router: IPsec tunnel, IP gateway setup, DHCP relay agent, firewall, internet setup
+#🗺️ Archietect Diagram
+
 #
 #☁️ Azure Cloud 
-* Azure AD Connect Cloud Sync:  
+* Azure AD Connect Cloud Sync: sync user from on-primses Active directory into Mincrosft Entra ID (Azure AD)
+#
+#🔨 Technologies Used 
+* Azure Cloud tenent
+* Router Mikcrotik OS
+* Git
+* Git Hub
