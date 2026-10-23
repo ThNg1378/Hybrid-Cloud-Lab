@@ -36,4 +36,10 @@ This lab focuses on building a hybrid cloud system in a real-world scenario, gua
 <img width="1362" height="767" alt="image" src="https://github.com/user-attachments/assets/038dab6f-a2a3-420d-9e4a-f714aa3be94e" />
 * On-Premises Active Directory OU Structure
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/96df789c-1c84-4cbd-8244-914e7f811887" />
-
+```text
+[ Remote Branch / User ] ──( L2TP/IPsec VPN )──► [ MikroTik Core Router ]
+                                                           │
+                                                [ Windows Server AD DS ]
+                                                           │ (Entra Connect)
+                                                [ Microsoft Entra ID ]
+                                                 (SSO & Conditional MFA)****
