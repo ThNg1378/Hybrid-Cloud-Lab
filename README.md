@@ -13,7 +13,7 @@ This lab focuses on building a hybrid cloud system in a real-world scenario, gua
 * Intrusion Detection: Deployed Snort IDS to monitor, detect, and alert on malicious network traffic.
 * Security & Resilience: Conducted rigorous penetration testing and validated disaster recovery protocols.
 #
-#🏗️ Lab Structure
+# 🏗️ Lab Structure
 * Hypervisor: VMware workstation
 * Domain Server: Active Directory, OU Management, DNS Server, DHCP Server
 * Monitor Server: PRTG, Snort IDS
@@ -24,13 +24,13 @@ This lab focuses on building a hybrid cloud system in a real-world scenario, gua
 # 🗺️ Architecture Diagram
 
 #
-#🔨 Technologies Used 
+# 🔨 Technologies Used 
 * Azure Cloud tenant
 * Router Mikrotik OS
 * Git
 * Git Hub
 #
-#☁️ Azure Cloud 
+# ☁️ Azure Cloud 
 * Azure AD Connect Cloud Sync: sync user from on-premises Active directory into Microsoft Entra ID (Azure AD)
 * 25 users successfully synced to Azure Entra ID
 
