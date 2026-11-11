@@ -1,43 +1,80 @@
-# Hybrid-Cloud-Lab ☁️
+<div align="center">
 
-## 📖 Project Overview
+# ☁️ Hybrid-Cloud-Lab
 
-This project demonstrates the design and implementation of a hybrid cloud infrastructure that combines on-premises infrastructure with Microsoft Azure cloud services. The core objective is to establish a robust security monitoring system while leveraging Active Directory and Azure Cloud (Cloud Sync) for unified identity and management. This setup serves as a sandbox environment to study network traffic flow, user synchronization, and hybrid infrastructure replication, providing a framework to streamline operations and improve manageability in complex server environments.
+**Enterprise-grade hybrid network. Secure, monitored, and identity-driven.**
 
-## 🎯 Project Goals
+🌐 [ Read more report (Updated)](#) · 🛡️ [System & Security Focus](#)
 
-- Enterprise-Grade Architecture: Designed and built a highly available hybrid cloud infrastructure.
-- Multi-Site Directory Services: Deployed Active Directory and Read-Only Domain Controllers (RODC) across distributed sites.
-- Secure Connectivity: Configured IPsec VPNs to ensure secure site-to-site communication.
-- Modern Identity Management: Integrated Azure Cloud for Single Sign-On (SSO) and Multi-Factor Authentication (MFA).
-- Centralized Monitoring: Implemented comprehensive network and system monitoring using PRTG.
-- Intrusion Detection: Deployed Snort IDS to monitor, detect, and alert on malicious network traffic.
-- Security & Resilience: Conducted rigorous penetration testing and validated disaster recovery protocols.
+![Status: Active](https://img.shields.io/badge/Status-Active-success?style=flat-square) ![Topology: Hub-and-Spoke](https://img.shields.io/badge/Topology-Hub--and--Spoke-blue?style=flat-square) ![Cloud: Azure](https://img.shields.io/badge/Cloud-Azure_Entra_ID-0089D6?style=flat-square) ![License: MIT](https://img.shields.io/badge/License-MIT-gray?style=flat-square)
 
-## 🏗️ Lab Structure
+**VMware Workstation · MikroTik RouterOS · Windows Server · PRTG Monitor · Azure**
 
-- Hypervisor: VMware Workstation
-- Domain Server: Active Directory, OU Management, DNS Server, DHCP Server
-- Monitor Server: PRTG, Snort IDS
-- File Server: Backup data, file storage, file sharing
-- Client VM 01 (HQ User) and Client VM 02 (Branch User): Simulated end-user workstations
-- MikroTik Router: IPsec tunnel, IP gateway setup, DHCP relay agent, firewall, internet setup
+</div>
 
-## 🗺️ Architecture Diagram
+---
 
+### 🚀 Nhanh gọn. Bảo mật. Trực quan.
+Mô phỏng kiến trúc mạng doanh nghiệp thực tế, giải quyết bài toán đa chi nhánh (Multi-site) với tiêu chuẩn bảo mật Zero Trust.
 
-## 🔨 Technologies Used
+Virtualization network architect in real coporation, to solve the multi-site networking challenge base on the  Zero Trust Architecture.
 
-- Azure Cloud tenant 
-- MikroTik RouterOS
-- Git
-- GitHub
-- PRTG
-- Snort 
+| 🔒 Zero Trust IAM | 🛡️ Site-to-Site VPN | 🚦 Traffic Control | 📈 Deep Visibility |
+| :--- | :--- | :--- | :--- |
+| **Azure SSO & MFA**<br>Identify access management, prevent data leakage. | **IPsec Tunnel**<br>Encrypt all data in transit between HQ and Branches. | **VLAN Segmentation**<br>Isolate Guest, Staff, and Management networks. | **PRTG Network**<br>Monitor uptime, bandwidth and system health 24/7. |
 
-## ☁️ Azure Cloud
+<div align="center">
+  <br>
+  <i>(Sơ đồ kiến trúc tổng thể mạng Hub-and-Spoke)</i>
+  <br><br>
+  <b>[ 🖼️ CHÈN SƠ ĐỒ MẠNG DRAW.IO CỦA BẠN VÀO ĐÂY ]</b>
+  <br><br>
+</div>
 
-- Azure AD Connect Cloud Sync: sync users from on-premises Active Directory into Microsoft Entra ID (Azure AD)
-- 25 users successfully synced to Azure Entra ID
+---
 
+### ⚡ Tại sao lại chọn kiến trúc này?
+*Kiến trúc mạng truyền thống SMB vs Hybrid-Cloud-Lab:*
 
+| Tiêu chí | Mạng Doanh nghiệp Truyền thống | Hybrid-Cloud-Lab |
+| :--- | :--- | :--- |
+| **Bảo mật truy cập (IAM)** | Mật khẩu nội bộ, dễ bị tấn công Brute-force | **Azure Entra ID (MFA & SSO)** |
+| **Kết nối chi nhánh** | NAT Port ra Public, không mã hóa (Rủi ro MitM) | **IPsec VPN Tunnel** mã hóa 256-bit |
+| **Cô lập mạng (Isolation)** | Dùng chung 1 dải IP mạng phẳng (Flat Network) | Phân mảnh **VLAN 10, 20, 30** nghiêm ngặt |
+| **Giám sát hệ thống** | Đợi user báo lỗi mạng mới bắt đầu xử lý | **PRTG Core Probe** cảnh báo chủ động |
+| **Khả năng mở rộng** | Chắp vá, khó quản lý tập trung | **Chuẩn Enterprise**, sẵn sàng tích hợp IDS/IPS |
+
+---
+
+### 🖼️ Bộ sưu tập (Screenshots)
+*(Dự án thực chiến phải có minh chứng. Hãy chèn các hình ảnh thực tế của bạn vào đây)*
+
+* 🛡️ **Azure MFA Login:** Giao diện bắt buộc nhập mã Authenticator khi đăng nhập. `[Chèn hình]`
+* 🔒 **IPsec Tunnel Established:** Trạng thái mã hóa kết nối giữa 2 Router trên Winbox. `[Chèn hình]`
+* 📊 **PRTG Dashboard:** Giao diện xanh/đỏ giám sát Traffic VLAN và Ping. `[Chèn hình]`
+* 🌐 **VLAN Routing:** Bảng định tuyến nội bộ tại HQ. `[Chèn hình]`
+
+---
+
+### ✨ Hệ thống này hoạt động như thế nào? (What it does)
+Dự án không chỉ là cài đặt phần mềm, mà là sự phối hợp của chuỗi công nghệ:
+* **Định tuyến & Chuyển mạch:** Sử dụng MikroTik làm Core Router, cấu hình Trunking và Access Port để chia các VLAN nội bộ. Luồng dữ liệu của các phòng ban bị cô lập hoàn toàn.
+* **Kết nối từ xa (Remote Branch):** Thay vì thuê đường truyền riêng (Leased-line) đắt đỏ, hệ thống dùng Internet công cộng nhưng thiết lập đường hầm **IPsec VPN** để nối mạng Chi nhánh vào Trụ sở chính như một mạng LAN nội bộ.
+* **Đồng bộ Đám mây (Cloud Sync):** Máy chủ Active Directory (Windows Server) dưới local được đồng bộ lên **Azure Cloud**. Người dùng chỉ cần 1 tài khoản duy nhất (SSO) để truy cập mọi dịch vụ và bắt buộc phải dùng **MFA** khi ở ngoài công ty.
+* **Giám sát chủ động:** PRTG Network Monitor liên tục quét (ping, SNMP) thiết bị mạng. Đảm bảo ống VPN luôn thông suốt và băng thông không bị nghẽn.
+
+---
+
+### 👨‍💻 Dành cho Kỹ sư & Nhà tuyển dụng (Repository Layout)
+Cấu trúc kho lưu trữ được quy hoạch theo chuẩn **Documentation-as-Code** giúp bất kỳ ai cũng có thể hiểu và tái tạo lại Lab.
+
+| Thư mục / Thành phần | Chức năng (What it is) |
+| :--- | :--- |
+| `docs/` | Chứa tài liệu thiết kế: Bảng quy hoạch IP, VLAN và file gốc sơ đồ kiến trúc mạng. |
+| `01-network-infrastructure/` | Các script/file export cấu hình (`.rsc`) của Router MikroTik (VLAN, NAT, Firewall). |
+| `02-ipsec-vpn/` | Hướng dẫn và cấu hình tạo đường hầm mã hóa Site-to-Site giữa HQ và Branch. |
+| `03-identity-and-cloud/` | Cấu hình Active Directory và các Policy đồng bộ lên Azure Entra ID (MFA, SSO). |
+| `04-monitoring/` | File xuất danh sách các Sensor giám sát từ PRTG Core Probe. |
+
+---
+*Được thiết kế và triển khai bởi **Nguyễn Hoàng Thanh Thiên** - Sinh viên ATTT định hướng System / Network & Security.*
