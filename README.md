@@ -25,7 +25,7 @@ Simulates a real-world enterprise network architecture, addressing Multi-site de
   <br>
   <i>Overall Hub-and-Spoke Network Architecture Diagram</i>
   <br><br>
-  <b><image src= "Screenshot/02-Network-Architecture/PROJECT_HYBRIDCLOUD.jpg" > </b>
+  <b><image src="Screenshot/02-Network-Architecture/PROJECT_HYBRIDCLOUD.jpg"> </b>
   <br><br>
 </div>
 
