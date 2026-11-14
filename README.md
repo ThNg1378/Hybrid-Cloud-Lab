@@ -13,7 +13,8 @@
 [Documentation](#-5-detailed-documentation)
 </div>
 
-<image src="C:\Users\ThienNguyen\Desktop\HYBRID\Hybrid-Cloud-Lab-1\Screenshot\Network-Architecture-Diagram\PROJECT_HYBRIDCLOUD.png">
+<image src="D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab-1\Screenshot\Network-Architecture-Diagram\PROJECT_HYBRIDCLOUD.png">
+
 ---
 
 ## 📌 1. Project Overview
@@ -38,10 +39,10 @@
 
 | Document | Contents |
 |---|---|
-| [📋 IP Allocation](docs/ip-allocation.md) | IP range plan for HQ, branch, and tunnel |
-| [🧩 VLAN Configuration](docs/vlan-config.md) | VLAN IDs, names, gateways, router/switch configuration |
-| [🔒 IPsec Configuration](docs/ipsec-config.md) | Phase 1/2, algorithms, peers, policies |
-| [⚙️ How It Works](docs/how-it-works.md) | Data flow: workstation → VLAN → IPsec → Azure |
+| [📋 IP Allocation](C:\Users\ThienNguyen\Desktop\HYBRID\Hybrid-Cloud-Lab-1\docs\IP-Allocation) | IP range plan for HQ, branch, and tunnel |
+| [🧩 VLAN Configuration](C:\Users\ThienNguyen\Desktop\HYBRID\Hybrid-Cloud-Lab-1\docs\VLAN-Configuration) | VLAN IDs, names, gateways, router/switch configuration |
+| [🔒 IPsec Configuration](C:\Users\ThienNguyen\Desktop\HYBRID\Hybrid-Cloud-Lab-1\docs\IPsec-Configuration) | Phase 1/2, algorithms, peers, policies |
+| [⚙️ How It Works](C:\Users\ThienNguyen\Desktop\HYBRID\Hybrid-Cloud-Lab-1\docs\how-it-works.md) | Data flow: workstation → VLAN → IPsec → Azure |
 
 ---
 
@@ -135,9 +136,9 @@ flowchart TB
 
 | Diagram | Image |
 |---|---|
-| Network architecture | ![Network Architecture](Screenshot/Network-Architecture/PROJECT_HYBRIDCLOUD.png) |
-| On-premises | ![On-Premises](Screenshot/On-Premises/01-on-premises-s....png) |
-| Project flow | ![Project Flow](Screenshot/project-flow/01.png) |
+| Network architecture | ![Network Architecture](D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab-1\Screenshot\Network-Architecture-Diagram\PROJECT_HYBRIDCLOUD.png) |
+| On-premises | ![On-Premises](D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab-1\Screenshot\On-Premises\01-on-premises-sync.png) |
+| Project flow | ![Project Flow](D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab-1\Screenshot\project-flow\01-project-flow.png) |
 
 ---
 
