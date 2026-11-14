@@ -65,14 +65,18 @@
 ### Overview
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph HQ["HQ (On-Premises)"]
-        direction TB
-        DC["Domain Server"]
-        MON["Monitor Server"]
-        FS["File Server"]
-        AZS["Azure Server (Entra Connect)"]
-        SW1["Switch"]
+        direction LR
+        subgraph SRV["Servers"]
+            direction TB
+            DC["Domain Server<br/>(AD DS / DNS / DHCP)"]
+            MON["Monitor Server<br/>(Zabbix / PRTG)"]
+            FS["File Server"]
+            AZS["Azure Server<br/>(Entra Connect)"]
+        end
+
+        SW1["Core Switch"]
         RHQ["Router HQ"]
         CHQ["Client HQ"]
 
@@ -81,9 +85,9 @@ flowchart LR
         CHQ --- RHQ
     end
 
-    NET(("Internet"))
+    NET(("☁️<br/>Internet"))
 
-    subgraph BR["Branch"]
+    subgraph BR["Branch Office"]
         direction TB
         RBR["Router Branch"]
         RODC["RODC Server"]
@@ -93,22 +97,36 @@ flowchart LR
         RBR --- CBR
     end
 
-    subgraph AZ["Azure Cloud"]
+    subgraph AZ["Azure Cloud Services"]
         direction TB
-        ENTRA["Entra ID"]
+        ENTRA["Microsoft Entra ID"]
         MFA["MFA"]
         SSO["SSO"]
 
         ENTRA --- MFA & SSO
     end
 
-    RHQ <==>|"IPsec Site-to-Site"| NET <==>|"IPsec"| RBR
-    AZS -.->|"Sync"| ENTRA
+    RHQ <==>|"<span style='color:#000000;font-weight:bold'>IPsec Site-to-Site</span>"| NET
+    NET <==>|"<span style='color:#000000;font-weight:bold'>IPsec Tunnel</span>"| RBR
+    AZS -.->|"<span style='color:#000000;font-weight:bold'>Cloud Sync</span>"| ENTRA
 
-    style HQ fill:#1e293b,stroke:#38bdf8,color:#f8fafc
-    style BR fill:#1e293b,stroke:#38bdf8,color:#f8fafc
-    style AZ fill:#0f172a,stroke:#60a5fa,color:#f8fafc
-    style NET fill:#334155,stroke:#94a3b8,color:#ffffff
+    classDef server fill:#1e3a8a,stroke:#60a5fa,stroke-width:2.5px,color:#ffffff,font-size:16px,font-weight:bold
+    classDef network fill:#065f46,stroke:#34d399,stroke-width:2.5px,color:#ffffff,font-size:16px,font-weight:bold
+    classDef client fill:#374151,stroke:#9ca3af,stroke-width:2px,color:#ffffff,font-size:16px,font-weight:bold
+    classDef cloud fill:#312e81,stroke:#818cf8,stroke-width:2.5px,color:#ffffff,font-size:16px,font-weight:bold
+    classDef internet fill:#475569,stroke:#cbd5e1,stroke-width:2.5px,color:#ffffff,font-size:18px,font-weight:bold
+
+    class DC,MON,FS,AZS,RODC server
+    class SW1,RHQ,RBR network
+    class CHQ,CBR client
+    class ENTRA,MFA,SSO cloud
+    class NET internet
+
+    style HQ fill:#0f172a,stroke:#38bdf8,stroke-width:2.5px,color:#38bdf8,font-size:18px
+    style SRV fill:#1e293b,stroke:#475569,stroke-width:1.5px,color:#94a3b8,font-size:15px
+    style BR fill:#0f172a,stroke:#38bdf8,stroke-width:2.5px,color:#38bdf8,font-size:18px
+    style AZ fill:#1e1b4b,stroke:#818cf8,stroke-width:2.5px,color:#a5b4fc,font-size:18px
+    linkStyle default stroke:#cbd5e1,stroke-width:2.5px
 ```
 
 > 💡 Adjust VLAN and device names to match your actual lab.
