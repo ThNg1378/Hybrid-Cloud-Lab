@@ -13,7 +13,7 @@
 [Documentation](#-5-detailed-documentation)
 </div>
 
-<image src="D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab-1\Screenshot\Network-Architecture-Diagram\PROJECT_HYBRIDCLOUD.png">
+<image src="D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab\Screenshot\Network-Architecture-Diagram\PROJECT_HYBRIDCLOUD.png">
 
 ---
 
@@ -136,9 +136,9 @@ flowchart TB
 
 | Diagram | Image |
 |---|---|
-| Network architecture | ![Network Architecture](D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab-1\Screenshot\Network-Architecture-Diagram\PROJECT_HYBRIDCLOUD.png) |
-| On-premises | ![On-Premises](D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab-1\Screenshot\On-Premises\01-on-premises-sync.png) |
-| Project flow | ![Project Flow](D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab-1\Screenshot\project-flow\01-project-flow.png) |
+| Network architecture | ![Network Architecture](D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab\Screenshot\Network-Architecture-Diagram\PROJECT_HYBRIDCLOUD.png) |
+| On-premises | ![On-Premises](D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab\Screenshot\On-Premises\01-on-premises-sync.png) |
+| Project flow | ![Project Flow](D:\Hybrid-cloud-github-repo\Hybrid-Cloud-Lab\Screenshot\project-flow\01-project-flow.png) |
 
 ---
 
